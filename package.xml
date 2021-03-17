@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>apriltags_ros</name>
+  <version>0.1.1</version>
+  <description>A package that provides a ROS wrapper for the apriltags C++ package</description>
+
+  <maintainer email="mwills@wpi.edu">Mitchell Wills</maintainer>
+  <author>Mitchell Wills</author>
+
+  <license>BSD</license>
+
+  <url type="website">http://wiki.ros.org/apriltags_ros</url>
+  <url type="bugtracker">https://github.com/RIVeR-Lab/apriltags_ros/issues</url>
+  <url type="repository">https://github.com/RIVeR-Lab/apriltags_ros</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>apriltags</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <exec_depend>apriltags</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+  </export>
+</package>
