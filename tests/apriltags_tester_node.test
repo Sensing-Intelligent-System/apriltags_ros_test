@@ -8,7 +8,7 @@
     <!--<arg name="filename" default="$(find apriltags_ros_test)/tests/20210315-apriltag163-stop.jpg" />-->
 
     <!-- Run the node -->
-    <include file="$(find apriltags_ros)/launch/apriltag_detector_node.launch">
+    <include file="$(find apriltags_ros_test)/launch/apriltag_detector_node.launch">
         <arg name="veh" value="$(arg veh)"/>
     </include>
 
