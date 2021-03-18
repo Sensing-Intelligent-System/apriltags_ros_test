@@ -3,9 +3,9 @@
     <arg name="node_name" default="apriltags_tester_node"/>
 
     <arg name="veh" default="testbot" doc="Name of vehicle. ex: megaman"/>
-    <!--<arg name="filename" default="$(find apriltags_ros)/tests/20160408-226-intersection_apriltags_24_60-amadobot.png" />-->
-    <arg name="filename" default="$(find apriltags_ros)/tests/20160508-apriltag108-starducks.png" />
-    <!--<arg name="filename" default="$(find apriltags_ros)/tests/20210315-apriltag163-stop.jpg" />-->
+    <!--<arg name="filename" default="$(find apriltags_ros_test)/tests/20160408-226-intersection_apriltags_24_60-amadobot.png" />-->
+    <arg name="filename" default="$(find apriltags_ros_test)/tests/20160508-apriltag108-starducks.png" />
+    <!--<arg name="filename" default="$(find apriltags_ros_test)/tests/20210315-apriltag163-stop.jpg" />-->
 
     <!-- Run the node -->
     <include file="$(find apriltags_ros)/launch/apriltag_detector_node.launch">
@@ -16,7 +16,7 @@
     <remap from="apriltags_tester_node/image_rect" to="image_rect" />
     <remap from="apriltags_tester_node/camera_info" to="camera_info" />
     <remap from="apriltags_tester_node/apriltags" to="tag_detections" />
-    <test test-name="apriltags_tester_node" pkg="apriltags_ros" type="apriltags_tester_node.py" ns="$(arg veh)">
+    <test test-name="apriltags_tester_node" pkg="apriltags_ros_test" type="apriltags_tester_node.py" ns="$(arg veh)">
         <param name="filename" value="$(arg filename)" />
     </test>
 </launch>
