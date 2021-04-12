@@ -16,14 +16,14 @@ ROS tutorials
 
 Download:[https://drive.google.com/file/d/16u-AsnN8Nm9cS6qzcpAeGx2fzADuKZCS/view?usp=sharing](https://drive.google.com/file/d/16u-AsnN8Nm9cS6qzcpAeGx2fzADuKZCS/view?usp=sharing)
 
-*** To playback, type the following command in a terminal
+**To playback, type the following command in a terminal**
 
 rosbag play -l tag_36h11_id6.bag
 
-*** This bag file contains two rostopic,camera_info and image_rect_color.
+**This bag file contains two rostopic,camera_info and image_rect_color.**
 
-***The tag's tag_family is 36h11.***
+The tag's tag_family is 36h11.
 
-***The tag's ID is 6.***
+The tag's ID is 6.
 
-***The tag's size is 0.081.***
+The tag's size is 0.081.
