@@ -24,4 +24,6 @@
       {id: 5, size: 0.163513}]
     </rosparam>
   </node>
+
+  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"/>
 </launch>
