@@ -2,8 +2,7 @@
     <arg name="pkg_name" value="apriltags_ros"/>
     <arg name="node_name" default="apriltags_tester_node"/>
 
-    <arg name="veh" default="testbot" doc="Name of vehicle. ex: megaman"/>
-    <!--<arg name="filename" default="$(find apriltags_ros_test)/tests/20160408-226-intersection_apriltags_24_60-amadobot.png" />-->
+    <arg name="veh" default="testbot" doc="Name of vehicle."/>
     <arg name="filename" default="$(find apriltags_ros_test)/tests/20160508-apriltag108-starducks.png" />
     <!--<arg name="filename" default="$(find apriltags_ros_test)/tests/20210315-apriltag163-stop.jpg" />-->
 
